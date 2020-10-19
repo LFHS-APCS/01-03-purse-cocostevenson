@@ -20,6 +20,6 @@ public class MoneyIntro
        money = money - getDollarsFromMoney(money);
         money = money * 100;
         money = Math.round(money);
-        return (int)money;;
+        return (int)money;
     }
 }
