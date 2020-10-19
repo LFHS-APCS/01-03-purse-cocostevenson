@@ -9,7 +9,7 @@ public class MoneyIntro
      */
     public int getDollarsFromMoney(double money)
     {
-        return 0;
+        return (int)money;
     }
 
     /**
@@ -17,6 +17,9 @@ public class MoneyIntro
      */
     public int getCentsFromMoney(double money)
     {
-        return 0;
+       money = money - getDollarsFromMoney(money);
+        money = money * 100;
+        money = Math.round(money);
+        return (int)money;;
     }
 }
